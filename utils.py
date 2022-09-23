@@ -14,6 +14,7 @@ from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
 import aiohttp
+from shortzy import Shortzy
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -382,19 +383,5 @@ def humanbytes(size):
 ####################  Dulink  ####################
 
 async def get_shortlink(link):
-    https = link.split(":")[0]
-    if "http" == https:
-        https = "https"
-        link = link.replace("http", https)
-    url = f'https://du-link.in/api'
-    params = {'api': '42e92809e9a070e97a43946d0b96a427dd97bdb3',
-              'url': link,
-              }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-            data = await response.json()
-            if data["status"] == "success":
-                return data['shortenedUrl']
-            else:
-                return f"Error: {data['message']}"
+    shortzy = Shortzy("0d942ae271110e9affd23a8958dea65fb607211c", "tnlink.in")
+    return await shortzy.convert(link)

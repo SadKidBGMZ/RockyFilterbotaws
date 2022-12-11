@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID', '13384432'])
-API_HASH = environ['API_HASH','ea9db4503ed7088b788e06dfd818e00e']
-BOT_TOKEN = environ['BOT_TOKEN','5929516883:AAHZSxIJAD5SLeTZDoxB-PqvVtLuRqPqb0E']
+API_ID = "13384432"
+API_HASH = "ea9db4503ed7088b788e06dfd818e00e"
+BOT_TOKEN = "5929516883:AAHZSxIJAD5SLeTZDoxB-PqvVtLuRqPqb0E"
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -32,19 +32,19 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://SK:SK@cluster0.ufxfumc.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = "mongodb+srv://SK:SK@cluster0.ufxfumc.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001126752899', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kr_join')
+LOG_CHANNEL = "-1001126752899"
+SUPPORT_CHAT = "kr_join"
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
+CUSTOM_FILE_CAPTION = "<code>{file_name}</code> \n\n <b>♻️ Ꮲᴏᴡᴇʀᴇᴅ Ᏼʏ ♻️ @ </b>"
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10") 
+IMDB_TEMPLATE = "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10") 
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)

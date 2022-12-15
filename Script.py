@@ -23,7 +23,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a> , I Cᴀɴ Pʀᴏᴠɪᴅᴇ M�
 │
 ├⍟ Pᴏᴡᴇʀᴇᴅ ʙʏ : @RockyUmar75
 │
-╰────[ @VIP_LinkzZ ]────⍟ </b> """
+╰────[ @RockyUmar75 ]────⍟ </b> """
     SOURCE_TXT = """𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐑𝐨𝐜𝐤𝐲𝐔𝐦𝐚𝐫𝟕𝟓 
 <b>
 <a href=https://t.me/+VQU8ly9zb5s3ZWI1>✓ HD Movies Chennal (Mdisk Type)</a>

@@ -44,14 +44,7 @@ IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
 CUSTOM_FILE_CAPTION = "<code>{file_name}</code> \n\n <b>♻️ Ꮲᴏᴡᴇʀᴇᴅ Ᏼʏ ♻️ @Tamil_New_movies_75 </b>"
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = """<b>🎬 Tɪᴛʟᴇ : {title}
-📆 Yᴇᴀʀ : {year}
-🌟 Rᴀᴛɪɴɢ : {rating}
-🎭 Gᴇɴʀᴇ : {genres}
-📥 Upload : @Tamil_New_movies_75
-
-Rᴇǫᴜᴇsᴛ Bʏ : {message.from_user.mention}
-🚀 Gʀᴏᴜᴘ : {message.chat.title} </b> """
+IMDB_TEMPLATE = "<b>🎬 Tɪᴛʟᴇ : {title} \n 📆 Yᴇᴀʀ : {year} \n 🌟 Rᴀᴛɪɴɢ : {rating} \n 🎭 Gᴇɴʀᴇ : {genres} \n 📥 Upload : @Tamil_New_movies_75 \n\n Rᴇǫᴜᴇsᴛ Bʏ : {message.from_user.mention} \n 🚀 Gʀᴏᴜᴘ : {message.chat.title} </b>"
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)

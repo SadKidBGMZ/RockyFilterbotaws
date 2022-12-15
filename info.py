@@ -19,7 +19,7 @@ BOT_TOKEN = "5929516883:AAFVrMfJ8LWMFoCmChzQfjtskO2O9pdWs18"
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = "https://graph.org/file/c72af6f77c6d164b81dd2.jpg"
+PICS = (environ.get('PICS', 'https://graph.org/file/c72af6f77c6d164b81dd2.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = "1504797855 1436951386"

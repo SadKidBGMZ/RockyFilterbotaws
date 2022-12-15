@@ -1,13 +1,13 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/SadKidBGMZ/RockyFilterBot.git /Rocky_Filter_Bot
+  git clone https://github.com/SadKidBGMZ/RockyFilterBotaws.git /RockyFilterBotaws
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone https://github.com/SadKidBGMZ/RockyFilterBot
+  git clone https://github.com/SadKidBGMZ/RockyFilterBotaws
 fi
 ls
-cd SadKidBGMZ/RockyFilterBot
+cd RockyFilterBotaws
 ls
 $PWD
 pip3 install -U -r requirements.txt
